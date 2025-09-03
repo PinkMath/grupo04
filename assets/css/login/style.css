@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../../imgs/login/fundoLogin.png");
+  background-size: cover; /* imagem se adapta */
+  background-position: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login {
+  position: relative;
+  width: 300px;
+  height: auto; /* deixa o conteúdo ajustar sozinho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* fundo semitransparente opcional */
+  border-radius: 15px;
+}
+
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+
+.login .inputBx input {
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  outline: none;
+}
+
+.login .inputBx input[type="submit"] {
+  background: linear-gradient(45deg, #17cae2, #291bf0);
+  border: none;
+  cursor: pointer;
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.login .links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+/* Responsividade */
+@media screen and (max-width: 767px) {
+  .login {
+    width: 90%; /* ocupa quase toda a tela */
+    height: auto;
+    padding: 15px;
+  }
+
+  .login h2 {
+    font-size: 1.5em; /* menor título */
+  }
+
+  .login .inputBx input {
+    padding: 14px; /* aumenta área de toque */
+    font-size: 1em;
+  }
+
+  .login .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  body {
+  background: linear-gradient(#17cae2, #050149);    
+  background-size: cover;
+  }
+}
