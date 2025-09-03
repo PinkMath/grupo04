@@ -25,7 +25,7 @@ IMG DE EX:
 # O SITE *TEM* QUE TER
 
 NO MINIMO O SITE DEVE TER ALGUNS DESSES:
-<header> , <nav> , <main> , <section> , <article> , <aside> , <footer>
+(<header> , <nav> , <main> , <section> , <article> , <aside> , <footer>)
 
 SE O SITE NÃO TIVER UM OU DOIS TUDO BEM MAS TEM QUE TER UMA BOA PARTE DELES.
 
