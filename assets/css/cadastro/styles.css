@@ -78,6 +78,11 @@ body {
   font-size: 0.9em;
 }
 
+.radio{
+  color: #fff;
+}
+
+
 /* Responsividade */
 @media screen and (max-width: 767px) {
   .login {
