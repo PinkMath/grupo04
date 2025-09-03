@@ -21,3 +21,37 @@ FAÇA SEU SITE JÁ COM O NOME DO QUE É **(EX: SAIBA-MAIS.HTML)** E CRIA UMA PAS
 
 IMG DE EX:
 <img width="173" height="238" alt="Image" src="https://github.com/user-attachments/assets/c3e07c9b-0e61-4a53-9118-d20bf5086d95" />
+
+<<<<<<< HEAD
+
+**FAÇA O SITE NESSA ORDEM:**
+
+```bash
+assets
+    |
+    |__css
+    |    |
+    |    |__{O-NOME-DA-SUA-PARTE}
+    |                |
+    |                |__styles.css
+    |
+    |__imgs
+    |    |
+    |    |__{O-NOME-DA-SUA-PARTE}
+    |                |
+    |                |__(SUAS IMGS)
+    |
+    |
+    |__pages
+        |
+        |__(O-NOME-DA-SUA-PARTE).html
+```
+=======
+# O SITE *TEM* QUE TER
+
+NO MINIMO O SITE DEVE TER ALGUNS DESSES:
+
+**header , nav , main , section , article , aside , footer**
+
+SE O SITE NÃO TIVER UM OU DOIS TUDO BEM, MAS TEM QUE TER UMA BOA PARTE DELES.
+
