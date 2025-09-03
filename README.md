@@ -17,8 +17,10 @@ PRIMEIRO *TENHA O GIT INSTALADO NO SEU PC*
 
 SEGUNDO VA NO SEU TERMINAL E PELO TERMINAL ABRA A AREA DE TRABALHO OU UMA PASTA QUE VOCÊ QUEIRA
 
-TERCEIRO USE O COMANDO **GIT CLONE https://github.com/PinkMath/grupo04.git**
-
+TERCEIRO USE O COMANDO:
+```bash
+git clone https://github.com/PinkMath/grupo04.git
+```
 QUARTO ESPERA BAIXAR O REPOSITORIO E VOCÊ JA IRA TER TODAS AS PASTAS NO SEU PC(VOCÊ PODE DELETAR A README.md, ELA É SO PARA APARECER ESSA MENSAGEM NO GITHUB)
 
 
@@ -37,7 +39,7 @@ IMG DE EX:
 
 <img width="173" height="238" alt="Image" src="https://github.com/user-attachments/assets/c3e07c9b-0e61-4a53-9118-d20bf5086d95" />
 
-====
+
 <div align='center'>
 ===================================
     
@@ -65,7 +67,6 @@ assets
         |__(O-NOME-DA-SUA-PARTE).html
 ```
 
-=======
 <div align='center'>
 ===================================
     
