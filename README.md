@@ -21,3 +21,27 @@ FAÇA SEU SITE JÁ COM O NOME DO QUE É **(EX: SAIBA-MAIS.HTML)** E CRIA UMA PAS
 
 IMG DE EX:
 <img width="173" height="238" alt="Image" src="https://github.com/user-attachments/assets/c3e07c9b-0e61-4a53-9118-d20bf5086d95" />
+
+
+**FAÇA O SITE NESSA ORDEM:**
+
+```bash
+assets
+    |
+    |__css
+    |    |
+    |    |__{O-NOME-DA-SUA-PARTE}
+    |                |
+    |                |__styles.css
+    |
+    |__imgs
+    |    |
+    |    |__{O-NOME-DA-SUA-PARTE}
+    |                |
+    |                |__(SUAS IMGS)
+    |
+    |
+    |__pages
+        |
+        |__(O-NOME-DA-SUA-PARTE).html
+```
