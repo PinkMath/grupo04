@@ -49,22 +49,22 @@ IMG DE EX:
 ```bash
 assets
     |
-    |__css
-    |    |
-    |    |__{O-NOME-DA-SUA-PARTE}
+    |--css
+    |   |
+    |   |--{O-NOME-DA-SUA-PARTE}
     |                |
-    |                |__styles.css
+    |                |--styles.css
     |
-    |__imgs
+    |--imgs
     |    |
-    |    |__{O-NOME-DA-SUA-PARTE}
+    |    |--{O-NOME-DA-SUA-PARTE}
     |                |
-    |                |__(SUAS IMGS)
+    |                |--(SUAS IMGS)
     |
     |
-    |__pages
-        |
-        |__(O-NOME-DA-SUA-PARTE).html
+    |--pages
+         |
+         |--(O-NOME-DA-SUA-PARTE).html
 ```
 
 <div align='center'>
