@@ -9,7 +9,7 @@ body{
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -22,8 +22,13 @@ header{
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     align-items: center;
-    justify-content: space-between;    
-    
+    justify-content: space-between;
+
+    .bemvindo{
+        position: relative;
+        left: 100px;
+    }
+
     .pesquisa{
         text-align: center;
         gap: 10px;
@@ -45,7 +50,7 @@ header{
             padding: 7px;
             border: none;
             border-radius: 5px;
-            background: #333e6a;
+            background: #45528a;
             cursor: pointer;
             transition: background 0.3s ease;
     
@@ -62,13 +67,11 @@ header{
 
 
     .logo{
-        flex: 1;
-        text-align: left;
 
         img{
-            width: 40px;
+            width: 50px;
             border-radius: 50%;
-            height: 40px;
+            height: 50px;
             vertical-align: middle;
         }
     }
@@ -88,7 +91,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 154px);
+    height: calc(100vh - 159px);
 
     .titlo{
         text-align: center;
@@ -256,10 +259,14 @@ footer{
 
 
 
-@media screen and (max-width: 820px) {
+@media (max-width: 820px) {
     header {
         flex-direction: column;
         align-items: flex-start;
+
+        .bemvindo{
+            display: none;
+        }
     }
 
     .pesquisa, .logo {
@@ -275,14 +282,14 @@ footer{
     }
 
     main {
-        height: calc(100vh - 204px);
+        height: calc(100vh - 212px);
     }
 
     .cursos {
 
             flex-direction: column;
             align-items: center;
-            gap: 16px;
+            gap: 13px;
 
             hr{
                 display: none;
@@ -294,19 +301,27 @@ footer{
                 margin: 8px;
                 border-radius: 4px;
                 width: 23pc;
-                height: 16pc;
+                height: 17pc;
             }
     }
 }
 
-@media screen and (max-width: 395px) {
+@media (max-width: 395px) {
+    main{
+        height: calc(100vh - 207px);
+    }
+
+    footer nav a h3{
+        font-size: smaller;
+    }
+
     .cursos {
         ul {
             width: 100%;
             height: auto;
 
             li{
-                margin: 2px;
+                margin: 3px;
                 padding: 20px;
                 width: 100%;
             }

@@ -80,6 +80,8 @@ body {
 
 .radio{
   color: #fdf6f6;
+  display: flex;
+  gap: 10px;
 }
 
 
