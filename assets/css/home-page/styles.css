@@ -328,3 +328,43 @@ footer{
         }
     }
 }
+
+@media (max-width: 284px) {
+    footer{
+        text-align: center;
+    }
+}
+
+@media (max-width: 337px) {
+
+    footer nav a h3{
+        text-align: center;
+    }
+
+    .pesquisa input{
+            width: 100px;
+        }
+}
+
+@media (max-width: 282px) {
+    main{
+        height: calc(100vh - 230px);
+    }
+}
+
+@media (max-height: 630px) {
+    header,footer{
+        margin: 2px;
+        padding: 5px;
+    }
+
+    body{
+        overflow: scroll;
+    }
+
+    main{
+        height: 100%;
+        overflow: hidden;
+    }
+    
+}
