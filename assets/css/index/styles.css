@@ -272,16 +272,19 @@ footer{
     }
 }
 
-@media (max-height: 570px) {
+@media (max-height: 630px) {
     header,footer{
         margin: 2px;
         padding: 5px;
     }
 
+    body{
+        overflow: scroll;
+    }
+
     main{
-        height: calc(100vh - 160px);
-        margin: 2px;
-        padding: 5px;
+        height: 100%;
+        overflow: hidden;
     }
     
 }
