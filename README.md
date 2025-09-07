@@ -11,9 +11,9 @@ QUANDO VOCÊS TERMINAREM A PARTE DE VOCÊS ME MANDEM E EU VOU ATUALIZAR OQUE EST
 
 🔹 HTML USA: `<!-- MSG -->`  
 🔹 CSS USA: `/* MSG */`
-</div>
-**TESTAR O SITE:** https://pinkmath.github.io/grupo04/
 
+TESTAR O SITE: https://pinkmath.github.io/grupo04/
+</div>
 <div align='center'>
 ===================================
     
