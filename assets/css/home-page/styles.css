@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* tirando 100% das margins e paddings do site */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* todo o corpo do site */
 body{
     font-family: "Orbitron", sans-serif;
     background-color: #f4f4f4;
@@ -13,6 +15,7 @@ body{
     overflow: hidden;
 }
 
+/* a parte de cima do site */
 header{
     background: #0D0E0E;
     padding: 10px;
@@ -24,11 +27,15 @@ header{
     align-items: center;
     justify-content: space-between;
 
+
+    /* msg de bem-vindo */
     .bemvindo{
         position: relative;
         left: 100px;
     }
 
+
+    /* a barra + botao de pesquisa */
     .pesquisa{
         text-align: center;
         gap: 10px;
@@ -65,7 +72,7 @@ header{
         }
     }
 
-
+    /* foto de perfil */
     .logo{
 
         img{
@@ -78,7 +85,7 @@ header{
 
 }
 
-
+/* parte central do site */
 main{
     overflow: scroll;
     overflow-x: hidden;
@@ -93,6 +100,7 @@ main{
     align-items: center;
     height: calc(100vh - 159px);
 
+    /* os titulos */
     .titlo{
         text-align: center;
         margin-bottom: 10px;
@@ -116,6 +124,7 @@ main{
         }
     }
 
+    /* os cards das novidades */
     .cards{
         display: flex;
         gap: 20px;
@@ -169,7 +178,7 @@ main{
 
 
 
-
+    /* os cursos */
     .cursos{
         display: flex;
         justify-content: space-around;
@@ -226,7 +235,7 @@ main{
 }
 
 
-
+/* o rodape do site */
 footer{
     padding: 8px;
     background: #0D0E0E;
@@ -258,7 +267,7 @@ footer{
 
 
 
-
+/* caso a tela tenha 820px de largura */
 @media (max-width: 820px) {
     header {
         flex-direction: column;
@@ -306,6 +315,7 @@ footer{
     }
 }
 
+/* caso a tela tenha 395px de largura */
 @media (max-width: 395px) {
     main{
         height: calc(100vh - 207px);
@@ -329,29 +339,29 @@ footer{
     }
 }
 
-@media (max-width: 284px) {
+/* caso a tela tenha 282px de largura */
+@media (max-width: 282px) {
     footer{
         text-align: center;
     }
-}
-
-@media (max-width: 337px) {
-
-    footer nav a h3{
-        text-align: center;
-    }
-
-    .pesquisa input{
-            width: 100px;
-        }
-}
-
-@media (max-width: 282px) {
     main{
         height: calc(100vh - 230px);
     }
 }
 
+/* caso a tela tenha 337px de largura */
+@media (max-width: 337px) {
+    
+    footer nav a h3{
+        text-align: center;
+    }
+    
+    .pesquisa input{
+        width: 100px;
+    }
+}
+
+/* caso a tela tenha 630px de altura */
 @media (max-height: 630px) {
     header,footer{
         margin: 2px;

@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+/* para tirar todas as margins e paddings do site */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* corpo do site */
 body{
     font-family: "Orbitron", sans-serif;
     background-color: #f4f4f4;
@@ -13,6 +15,7 @@ body{
     overflow: hidden;
 }
 
+/* a parte de cima do site */
 header{
     background: #0D0E0E;
     padding: 10px;
@@ -24,6 +27,7 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    /* barra + botao de pesquisa */
     .pesquisa{
         text-align: center;
         gap: 10px;
@@ -60,7 +64,7 @@ header{
         }
     }
 
-
+    /* img de nao logado */
     .logo{
 
         img{
@@ -73,7 +77,7 @@ header{
 
 }
 
-
+/* a parte central do site */
 main{
     overflow: scroll;
     overflow-x: hidden;
@@ -89,10 +93,11 @@ main{
     height: calc(100vh - 159px);
 
 
-    
+    /* o inicio é o conteiner */
     .inicio{
         display: flex;
 
+        /* a img da esquerda */
         .imagem{
             padding-right: 20px ;
 
@@ -101,7 +106,7 @@ main{
             }
         }
 
-
+        /* o texto */
         .texto{
             text-align: center;
             line-height: 40px;
@@ -139,7 +144,7 @@ main{
 }
 
 
-
+/* o rodape do site */
 footer{
     padding: 8px;
     background: #0D0E0E;
@@ -168,6 +173,7 @@ footer{
     }
 }
 
+/* caso a tela tenha 970px de largura */
 @media (max-width: 970px) {
     main{
         background-image: url(../../imgs/index/studys.jpg);
@@ -176,7 +182,9 @@ footer{
         background-position: center;
         overflow: hidden;
         padding: 0;
+        height: calc(100vh - 140px);
     }
+
     .inicio{
         height: 100%;
         padding: 10px;
@@ -191,15 +199,10 @@ footer{
            display: none;
         }
     }
+
 }
 
-
-@media (max-width: 968px) {
-    main{
-        height: calc(100vh - 140px);
-    }
-}
-
+/* caso a tela tenha 337px de largura */
 @media (max-width: 837px) {
     header {
         flex-direction: column;
@@ -228,6 +231,7 @@ footer{
   
 }
 
+/* caso a tela tenha 545px de largura */
 @media (max-width: 545px) {
     .inicio{
         font-size: small;
@@ -238,7 +242,7 @@ footer{
     }
 }
 
-
+/* caso a tela tenha 395px de largura */
 @media (max-width: 395px) {
     main{
         height: calc(100vh - 168px);
@@ -251,6 +255,7 @@ footer{
     
 }
 
+/* caso a tela tenha 337px de largura */
 @media (max-width: 337px) {
     .inicio h2{
         font-size: 14px;
@@ -272,6 +277,7 @@ footer{
     }
 }
 
+/* caso a tela tenha 630px de altura */
 @media (max-height: 630px) {
     header,footer{
         margin: 2px;
