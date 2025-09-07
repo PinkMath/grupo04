@@ -360,6 +360,7 @@ footer{
 
     body{
         overflow: scroll;
+        height: auto;
     }
 
     main{

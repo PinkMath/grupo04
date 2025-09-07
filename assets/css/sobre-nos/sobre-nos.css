@@ -151,3 +151,20 @@ footer{
             height: auto;
         }
 }
+
+@media (max-height: 630px) {
+    header,footer{
+        margin: 2px;
+    }
+
+    body{
+        overflow: scroll;
+        height: auto;
+    }
+
+    main{
+        height: 100%;
+        overflow: hidden;
+    }
+    
+}
