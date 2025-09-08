@@ -122,10 +122,11 @@ footer{
   .mainpage {
     width: 100%;
     padding: 10px;
+    font-size: 80%;
   }
 
   .cursos img {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 }
@@ -134,6 +135,7 @@ footer{
   .mainpage {
     width: 90%;
     padding: 15px;
+    font-size: 80%;
   }
 
   .cursos img {
