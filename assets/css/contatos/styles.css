@@ -49,14 +49,15 @@ header {
         }
         button{
             position: relative;
-            top: 2px;
+            top: 5px;
             border-radius: 5px;
             position: relative;
             background-color:  #0097a7;
-            
+            padding: 3px;
+
             img{
-                width: 18px;
-                height: 18px;
+                width: 21px;
+                height: 21px;
             border-style: none;
         }
         }
