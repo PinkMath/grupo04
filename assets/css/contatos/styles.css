@@ -33,13 +33,33 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: var(--primary-color);
+    background-color: #0D0E0E;
 
     
-    .pfv{
+    .pesquisa{
+        text-align: center;
+        gap: 10px;
         
-    }
+        
+        input{
+            padding: 7px;
+            border: none;
+            border-radius: 5px;
     
+        }
+        button{
+            border-radius: 5px;
+            position: relative;
+            background-color: #0097a7;
+
+            img{
+                width: 18px;
+                height: 18px;
+            border-style: none;
+        }
+        }
+
+    }
 
     
     
@@ -56,9 +76,7 @@ header {
     }
 
 
-    button{
-        background-color: #00bcd4;
-    }
+    
     
 }
 
@@ -136,14 +154,20 @@ h1.conts {
     flex-direction: column;
     gap: 15px;
 
-    .email input, 
-    .email textarea {
+    .email input{
         padding: 10px;
         width: 100%;
         border: 1px solid var(--input-border);
         border-radius: 5px;
+    
     }
     
+    textarea {
+    resize: vertical;
+    min-height: 100px;
+    max-height: 100px;
+    }
+
     button {
         background-color: var(--secondary-color);
         color: var(--card-bg);
