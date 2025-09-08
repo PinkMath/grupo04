@@ -342,6 +342,10 @@ footer{
 @media (max-width: 395px) {
     main{
         height: calc(100vh - 207px);
+
+        .explicação p{
+            text-align: center;
+        }
     }
 
     footer nav a h3{
