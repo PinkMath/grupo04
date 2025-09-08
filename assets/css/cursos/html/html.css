@@ -12,6 +12,7 @@ header {
       text-align: center;
       z-index: 1000;     /* Fica por cima do conteúdo */
       font-family: "Orbitron", sans-serif;
+      opacity: 1;
 }
 
 
@@ -19,7 +20,10 @@ header {
 ul.breadcrumb { 
   padding: 8px 16px;
   list-style: none;
-  background-color: #eee;
+  background-color: gray ;
+  text-align: center;
+  opacity: 0.8;
+  transition: 0.8s;
 }
 
 ul.breadcrumb li {display: inline;} 
@@ -30,6 +34,14 @@ ul.breadcrumb li+li:before {
   content: "/\00a0"; 
 }
 
+ul.breadcrumb {
+    margin-top: 90px; /* Adjust this value to match your header's height */
+}
+
+ul.breadcrumb a:hover {
+  transition: 0.3s;
+  color: purple;
+}
 body, main{
     font-family: "Orbitron", sans-serif;
 }
@@ -37,7 +49,7 @@ body, main{
 .mainpage{
     width:800px;
     padding: 20px;
-    margin: 10% auto;
+    margin: 5% auto;
     background-color:#032539;
     opacity: 0.8;
     color: white;
@@ -51,6 +63,15 @@ body, main{
     justify-content: center;
 }
 
-p{
+p, h1{
     font-family: "Orbitron", sans-serif;
+}
+
+h1{
+    font-size: large;
+}
+
+body{
+    background-image: url('/assets/imgs/wallhtml/wallpaperflare.com_wallpaper.jpg');
+    background-size: cover;
 }
