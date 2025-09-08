@@ -12,7 +12,8 @@ body{
     color: #333;
     line-height: 1.6;
     height: 100%;
-    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* a parte de cima do site */
@@ -26,6 +27,15 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+ }
+
+ main {
+    text-align: center;
+ }
+
+.TT {
+   text-align: center;
+   
  }
 
 
