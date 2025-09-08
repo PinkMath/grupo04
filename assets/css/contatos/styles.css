@@ -28,23 +28,38 @@ body {
 }
 
 header {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
     background-color: var(--primary-color);
 
-    img {
-        width: 80px;
+    
+    .pfv{
+        
     }
+    
+
+    
     
     input {
         padding: 5px 10px;
     }
     
     img {
-        width: 20px;
+        width: 50px;
+        border-radius: 100%;
+        border-style: solid;
+        border-width: 5px;
+        
     }
+
+
+    button{
+        background-color: #00bcd4;
+    }
+    
 }
 
 main {
