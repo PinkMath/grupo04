@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root{
+    --primary-color: #032539;
+    --secondary-color: #064663;
+    --text-color: white;
+    --hover-color: blue;
+    --breadcrumb-bg: #032539;
+    --breadcrumb-divider: white;
+    --img-border: black;
+    --main-bg: whitesmoke;
+    --main-text: black;
+    --hr-border: black;
+}
+
 /* tirando 100% das margins e paddings do site */
 *{
     margin: 0;
@@ -7,20 +21,19 @@
 
 /* todo o corpo do site */
 body{
-    background: linear-gradient( #4d3aac , #031d5e );
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
     font-family: "Orbitron", sans-serif;
-    color: #333;
+    color: var(--main-text);
     line-height: 1.6;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
-
 }
 
 /* a parte de cima do site */
 header{
-    background: #032539;
+    background: var(--primary-color);
     padding: 10px;
     text-align: center;
     margin: 8px;
@@ -35,16 +48,13 @@ header{
     text-align: center;
  }
 
-
-
-
 .TT {
     align-items: center;
     text-align: center;
-    background-color:#45507d;
+    background-color: var(--secondary-color);
     padding: 40px;
     margin: 25px auto; /* centraliza horizontalmente */
-    color: #ffffffd5;
+    color: var(--text-color);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
@@ -53,19 +63,9 @@ header{
     width: 70%;
 }
 
-
- .alin {
+.alin {
     text-align: justify;
     padding: 19px;
     line-height: 2.0;
     text-shadow: #333;
- }
-
- 
-
-
-
-
-
-
-
+}

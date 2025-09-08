@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root{
+    --primary-color: #00ADB5;
+    --secondary-color: #393E46;
+    --background-color: #EEEEEE;
+    --text-color: #333;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --header-bg: #0D0E0E;
+    --card-bg: #d8d8d8;
+    --card-hover-bg: #bfbfbf;
+    --card-border: #373636;
+    --card-text: #EEEEEE;
+    --card-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --search-btn-bg: #45528a;
+    --search-btn-hover-bg: #3a415b;
+    --course-bg: #f9f9f9;
+    --course-border: #ddd;
+    --course-hover-bg: #e6e6e6;
+    --hr-bg: #ccc;
+    --footer-bg: #0D0E0E;
+    --footer-text: #fff;
+}
+
 /* para tirar todas as margins e paddings do site */
 *{
     margin: 0;
@@ -8,8 +32,8 @@
 /* corpo do site */
 body{
     font-family: "Orbitron", sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: var(--course-bg);
+    color: var(--text-color);
     line-height: 1.6;
     height: 100%;
     overflow: hidden;
@@ -17,12 +41,12 @@ body{
 
 /* a parte de cima do site */
 header{
-    background: #0D0E0E;
+    background: var(--header-bg);
     padding: 10px;
     text-align: center;
     margin: 8px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,25 +60,25 @@ header{
         input{
             padding: 7px;
             border: none;
-            border-radius: 5px;
+            border-radius: var(--border-radius);
             
             &:focus{
                 outline: none;
-                box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-                border: 1px solid rgba(81, 203, 238, 1);
+                box-shadow: 0 0 5px var(--primary-color);
+                border: 1px solid var(--primary-color);
             }
         }
         button{
             vertical-align: middle;
             padding: 7px;
             border: none;
-            border-radius: 5px;
-            background: #45528a;
+            border-radius: var(--border-radius);
+            background: var(--search-btn-bg);
             cursor: pointer;
             transition: background 0.3s ease;
     
             &:hover{
-                background: #3a415b;
+                background: var(--search-btn-hover-bg);
             }
     
             img{
@@ -83,9 +107,9 @@ main{
     overflow-x: hidden;
     padding: 10px;
     margin: 8px;
-    background: #ececec;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
     min-height: 400px;
     display: flex;
     flex-direction: column;
@@ -125,13 +149,13 @@ main{
                     margin-top: 13px;
                     border: none;
                     border-radius: 13px;
-                    border-color: #00ADB5;
-                    background-color: #28a2a8;
+                    border-color: var(--primary-color);
+                    background-color: var(--search-btn-bg);
                     transition: .3s;
                     cursor: pointer;
                     
                     &:hover{
-                        background-color: #00ADB5;
+                        background-color: var(--primary-color);
                     }
                 }
                 
@@ -147,10 +171,10 @@ main{
 /* o rodape do site */
 footer{
     padding: 8px;
-    background: #0D0E0E;
+    background: var(--footer-bg);
     margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 
     nav{
         display: flex;
@@ -159,7 +183,7 @@ footer{
         align-items: center;
 
         a{
-            color: #fff;
+            color: var(--footer-text);
             text-decoration: none;
 
             h3{
@@ -190,8 +214,8 @@ footer{
         padding: 10px;
         
         .texto div{
-                background-color: #ececec;
-                border-radius: 5px;
+                background-color: var(--card-bg);
+                border-radius: var(--border-radius);
                 padding: 10px;
             }
 
@@ -202,7 +226,7 @@ footer{
 
 }
 
-/* caso a tela tenha 337px de largura */
+/* caso a tela tenha 837px de largura */
 @media (max-width: 837px) {
     header {
         flex-direction: column;
@@ -215,8 +239,8 @@ footer{
     }
 
     .texto div{
-                background-color: #ececec;
-                border-radius: 5px;
+                background-color: var(--card-bg);
+                border-radius: var(--border-radius);
                 padding: 10px;
 
                 h2{
