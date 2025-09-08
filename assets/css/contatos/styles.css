@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+:root{
+    --primary-color: #413e3e;
+    --secondary-color: #00bcd4;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --border-radius: 5px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --footer-bg: #0D0E0E;
+    --card-bg: #fff;
+    --card-text: #000;
+    --card-border: #0D0E0E;
+    --input-border: #ccc;
+    --button-hover: #0097a7;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,6 +23,8 @@ body {
     font-family: "Orbitron", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
@@ -15,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #413e3e;
+    background-color: var(--primary-color);
 
     img {
         width: 80px;
@@ -29,7 +46,6 @@ header {
         width: 20px;
     }
 }
-
 
 main {
     display: flex;
@@ -51,10 +67,10 @@ h1.conts {
 }
 
 .cn {
-    border-color: #0D0E0E;
+    border-color: var(--card-border);
     border-style: solid;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--card-bg);
+    color: var(--card-text);
     padding: 20px;
     border-radius: 10px;
     width: 300px;
@@ -84,7 +100,7 @@ h1.conts {
     
     a{
         text-decoration: none;
-        color: #000;
+        color: var(--card-text);
     }
     p {
         margin: 0;
@@ -93,10 +109,10 @@ h1.conts {
 }
 
 .email {
-    border-color: #0D0E0E;
+    border-color: var(--card-border);
     border-style: solid;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--card-bg);
+    color: var(--card-text);
     padding: 30px;
     border-radius: 10px;
     width: 400px;
@@ -109,13 +125,13 @@ h1.conts {
     .email textarea {
         padding: 10px;
         width: 100%;
-        border: 1px solid #ccc;
+        border: 1px solid var(--input-border);
         border-radius: 5px;
     }
     
     button {
-        background-color: #00bcd4;
-        color: #fff;
+        background-color: var(--secondary-color);
+        color: var(--card-bg);
         border: none;
         padding: 12px;
         border-radius: 5px;
@@ -124,17 +140,16 @@ h1.conts {
     }
     
     button:hover {
-        background-color: #0097a7;
+        background-color: var(--button-hover);
     }
 }
 
-
 footer {
     padding: 20px;
-    background: #0D0E0E;
+    background: var(--footer-bg);
     margin-top: 50px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 
      nav {
         display: flex;
@@ -142,7 +157,7 @@ footer {
     }
     
     a {
-        color: #fff;
+        color: var(--card-bg);
         text-decoration: none;
     }
     
@@ -155,10 +170,7 @@ footer {
     }
 }
 
-
-
 @media (max-width: 1024px) {
-
     header {
         flex-direction: column;
         align-items: center;
@@ -166,7 +178,6 @@ footer {
     }
 
     .container {
-
         display: flex;
         justify-content: center;
         gap: 30px;
@@ -178,14 +189,12 @@ footer {
 }
 
 @media (max-width: 770px) {
-
     header {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
     
-
     .email, .cn {
         width: 10px;
         width: 80%;
@@ -193,23 +202,18 @@ footer {
 }
 
 @media (max-width: 350px)  {
-
     header {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
-   
 }
-
 
 @media (max-height: 340px) {
     header {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        
-        
     }
 
     .pesquisa{
@@ -222,5 +226,4 @@ footer {
         width: 100%;
         height: 100%;
     }
-   
 }
