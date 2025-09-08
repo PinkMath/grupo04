@@ -74,7 +74,7 @@ h1{
 }
 
 body{
-    background-image: url('/assets/imgs/wallhtml/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('../../../imgs/wallhtml/wallpaperflare.com_wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
