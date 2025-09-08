@@ -137,6 +137,10 @@ footer{
     width: 90%;
     height: auto;
   }
+  header {
+      padding: 10px;
+      font-size: 90%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -151,4 +155,8 @@ footer{
     height: auto;
   }
   
+    header {
+        padding: 12px;
+        font-size: 95%;
+    }
 }
