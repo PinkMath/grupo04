@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+/*Login*/
+
 
 * {
   margin: 0;
@@ -17,7 +19,7 @@ body {
   background-size: cover; /* imagem se adapta */
   background-position: center;
   width: 100%;
-  overflow: hidden;
+  
 }
 
 .login {
@@ -82,7 +84,6 @@ body {
 @media screen and (max-width: 767px) {
   .login {
     width: 90%; /* ocupa quase toda a tela */
-    height: auto;
     padding: 15px;
   }
 
@@ -104,5 +105,13 @@ body {
   body {
   background: linear-gradient(#17cae2, #050149);    
   background-size: cover;
+  height: 1000px
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+   background-color: black;
+  }
+
 }
