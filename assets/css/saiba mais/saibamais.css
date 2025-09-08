@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+:root{
+  --primary-color: #032539;
+  --secondary-color: #064663;
+  --text-color: white;
+  --hover-color: yellow;
+  --breadcrumb-bg: #032539;
+  --breadcrumb-divider: white;
+  --img-border: black;
+  --main-bg: whitesmoke;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    font-family: "Orbitron", sans-serif;
+    opacity: 0.8;
+}
+
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: var(--breadcrumb-bg);
+  text-align: center;
+  opacity: 0.8;
+  transition: 0.8s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--breadcrumb-divider);
+  content: "/\00a0";
+}
+
+ul.breadcrumb {
+  margin-top: 90px;
+}
+
+ul.breadcrumb a:hover {
+  transition: 0.3s;
+  color: var(--hover-color);
+}
+
+ul.breadcrumb a {
+  color: var(--text-color);
+}
+
+body, main{
+  font-family: "Orbitron", sans-serif;
+}
+
+.mainpage{
+  width:800px;
+  padding: 20px;
+  margin: 4% auto;
+  background-color: var(--main-bg);
+  opacity: 0.9;
+  color: black;
+  font-family: "Orbitron", sans-serif;
+  text-align:center;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p, h1{
+  font-family: "Orbitron", sans-serif;
+}
+
+h1{
+  font-size: large;
+}
+
+footer{
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
+  
+}
+
+body{
+  background-image: url('../../../imgs/home-page/Logo.png');
+  background-size: cover;
+  background-position: center;
+
+}
+
+hr{
+  border: 1px solid var(--img-border);
+}
+
+
+
+footer{
+  font-family: "Orbitron", sans-serif;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .mainpage {
+  width: 100%;
+  padding: 10px;
+  font-size: 80%;
+  }
+
+  header {
+    padding: 10px;
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .mainpage {
+  width: 90%;
+  padding: 15px;
+  font-size: 80%;
+  }
+
+
+  header {
+    padding: 12px;
+    font-size: 95%;
+  }
+}
