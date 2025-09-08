@@ -29,6 +29,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.9;
+    color: white;
 }
 
 /* a parte de cima do site */
@@ -69,3 +70,5 @@ header{
     line-height: 2.0;
     text-shadow: #333;
 }
+
+

@@ -134,7 +134,7 @@ footer{
   opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .mainpage {
   width: 100%;
   padding: 10px;
@@ -151,7 +151,7 @@ footer{
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .mainpage {
   width: 90%;
   padding: 15px;

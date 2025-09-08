@@ -58,7 +58,7 @@ body {
   border-radius: 40px;
   font-size: 1.2em;
   color: var(--cor-branco);
-  outline: none;
+  
 }
 
 .login .inputBx input[type="submit"] {
