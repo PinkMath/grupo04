@@ -7,18 +7,20 @@
 
 /* todo o corpo do site */
 body{
+    background: linear-gradient( #4d3aac , #031d5e );
     font-family: "Orbitron", sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    opacity: 0.9;
+
 }
 
 /* a parte de cima do site */
 header{
-    background: #0D0E0E;
+    background: #032539;
     padding: 10px;
     text-align: center;
     margin: 8px;
@@ -33,15 +35,33 @@ header{
     text-align: center;
  }
 
+
+
+
 .TT {
-   text-align: center;
-   background-color:#45507d;
-   padding: 20px;
-   margin: 20px;
-   color: #f4f4f4;
-   
+    align-items: center;
+    text-align: center;
+    background-color:#45507d;
+    padding: 40px;
+    margin: 25px auto; /* centraliza horizontalmente */
+    color: #ffffffd5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.863); 
+    opacity: 1.0;
+    width: 70%;
+}
+
+
+ .alin {
+    text-align: justify;
+    padding: 19px;
+    line-height: 2.0;
+    text-shadow: #333;
  }
 
+ 
 
 
 
