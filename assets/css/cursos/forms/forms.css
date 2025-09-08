@@ -25,20 +25,23 @@ header{
 
  .FORMT {
     text-align: justify;
+    padding: 20px;
     
 
  }
 
- .B1{
+
+.B1{
     align-items: center;
     text-align: center;
     background-color: #282ed1;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto; /* centraliza horizontalmente */
     border-radius: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.777);
+    width: 70%; /* define uma largura para centralizar melhor */
+}
 
- }
 
  
 
