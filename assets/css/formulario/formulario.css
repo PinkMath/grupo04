@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-/* retirar todos as margins e paddings do site */
+
+:root {
+    --primary-color: #00ADB5;
+    --secondary-color: #393E46;
+    --background-color: #EEEEEE;
+    --text-color: #333;
+    --form-bg: #fff;
+    --input-bg: #f8f8f8;
+    --btn-bg: #7bbbff;
+    --btn-hover-bg: #007BFF;
+    --input-border: #ccc;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +20,8 @@
 
 body{
     font-family: "Orbitron", sans-serif;
-    background-color: #efefef;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     height: 100vh;
     overflow: hidden;
@@ -18,54 +31,52 @@ body{
     overflow-y: hidden;
 }
 
-/* formulario */
 form{
-    background: #fff;
+    background: var(--form-bg);
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px var(--shadow-color);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    /* mensagem */
+    h1{
+        color: var(--primary-color);
+    }
+
     #mensagem{
         max-height: 100px;
         max-width: 400px;
     }
 
-    /* genero */
     select{
         margin-top: 3px;
         padding: 10px;
         margin-bottom: 7px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--input-border);
         border-radius: 4px;
         font-size: 16px;
-        background-color: #f8f8f8;
+        background-color: var(--input-bg);
     }
 
-    /* botao */
     .btn{
         margin-top: 3px;
         padding: 10px;
         margin-bottom: 15px;
-        border: 1px solid #ccc;
+        border: 1px solid var(--input-border);
         border-radius: 4px;
         font-size: 16px;
-        background-color: #7bbbff;
+        background-color: var(--btn-bg);
         transition: 0.3s ease;
 
-
         &:hover{
-            background-color: #007BFF;
+            background-color: var(--btn-hover-bg);
         }
     }
 }
 
-/* caso a tela tenha menos de 468px */
 @media (max-width: 468px) {
     form {
         width: 90%;
@@ -76,18 +87,14 @@ form{
             max-width: 99%;
         }
     }
-    
 }
 
-/* caso a tela tenha menos de 320px */
 @media (max-width: 320px) {
     form {
         font-size: smaller;
     }
-    
 }
 
-/* caso a tela tenha menos de 228px */
 @media (max-width: 228px) {
     form {
         font-size: x-small;
