@@ -12,25 +12,25 @@ header {
       text-align: center;
       z-index: 1000;     /* Fica por cima do conteúdo */
       font-family: "Orbitron", sans-serif;
-      opacity: 1;
+      opacity: 0.8;
 }
-
 
 /* aba de paginas, como o home, css, html; serve como as divisórias de páginas */
 ul.breadcrumb { 
   padding: 8px 16px;
   list-style: none;
-  background-color: gray ;
+  background-color: #032539 ;
   text-align: center;
   opacity: 0.8;
   transition: 0.8s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul.breadcrumb li {display: inline;} 
 
 ul.breadcrumb li+li:before { 
   padding: 8px;
-  color: black;
+  color: white;
   content: "/\00a0"; 
 }
 
@@ -40,8 +40,13 @@ ul.breadcrumb {
 
 ul.breadcrumb a:hover {
   transition: 0.3s;
-  color: purple;
+  color: blue;
 }
+
+ul.breadcrumb a {
+    color: white;
+}
+
 body, main{
     font-family: "Orbitron", sans-serif;
 }
@@ -49,20 +54,15 @@ body, main{
 .mainpage{
     width:800px;
     padding: 20px;
-    margin: 5% auto;
-    background-color:#032539;
-    opacity: 0.8;
-    color: white;
+    margin: 4% auto;
+    background-color:whitesmoke;
+    opacity: 0.9;
+    color: black;
     font-family: "Orbitron", sans-serif;
-    text-align: center;
+    text-align:center;
     line-height: 1.6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction:row
 }
 
 p, h1{
@@ -73,16 +73,24 @@ h1{
     font-size: large;
 }
 
+footer{
+    font-family: "Orbitron", sans-serif;
+    width: 100%;
+    background-color: #032539;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    opacity: 0.8;
+}
+
 body{
-    background-image: url('../../../imgs/wallhtml/wallpaperflare.com_wallpaper.jpg');
+    background-image: url('../../../imgs/jsimages/back.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    line-height: 1.6;
 }
 
 hr{
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .cursos {
@@ -129,6 +137,10 @@ footer{
     width: 90%;
     height: auto;
   }
+  header {
+      padding: 10px;
+      font-size: 90%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
@@ -143,4 +155,8 @@ footer{
     height: auto;
   }
   
+    header {
+        padding: 12px;
+        font-size: 95%;
+    }
 }

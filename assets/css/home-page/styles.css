@@ -27,6 +27,10 @@ header{
     align-items: center;
     justify-content: space-between;
 
+    /* borda na img de perfil */
+    .logo img{
+        border: 3px solid #fff;
+    }
 
     /* msg de bem-vindo */
     .bemvindo{
