@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 
+:root{
+    --cor-primaria: #0D0E0E;
+    --cor-secundaria: #29304B;
+    --cor-terciaria: #45528a;
+    --cor-quaternaria: #3a415b;
+    --cor-fundo: #d8d8d8 ;
+    --cor-texto: #FFFFFF;
+}
+
 
 header{
     background: #0D0E0E;
