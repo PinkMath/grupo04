@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+/*Login*/
+
 
 * {
   margin: 0;
@@ -105,4 +107,11 @@ body {
   background: linear-gradient(#17cae2, #050149);    
   background-size: cover;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: black;
+  }
+
 }
