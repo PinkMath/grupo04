@@ -30,6 +30,11 @@ form{
     flex-direction: column;
     justify-content: center;
 
+    /* o titulo */
+    h1{
+        color: #00ADB5;
+    }
+
     /* mensagem */
     #mensagem{
         max-height: 100px;
