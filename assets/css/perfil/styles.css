@@ -13,7 +13,7 @@
 
 header{
     background-color: #0D0E0E;
-    padding: 10px;
+    padding: 8px;
     text-align: center;
     margin: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -51,11 +51,7 @@ header{
             border-radius: 5px;
             background: #45528a;
             cursor: pointer;
-            transition: background 0.3s ease;
     
-            &:hover{
-                background: #3a415b;
-            }
     
             img{
                 width: 18px;

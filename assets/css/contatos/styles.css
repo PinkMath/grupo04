@@ -49,14 +49,15 @@ header {
         }
         button{
             position: relative;
-            top: 2px;
+            top: 5px;
             border-radius: 5px;
             position: relative;
             background-color:  #0097a7;
-            
+            padding: 3px;
+
             img{
-                width: 18px;
-                height: 18px;
+                width: 21px;
+                height: 21px;
             border-style: none;
         }
         }
@@ -185,29 +186,31 @@ h1.conts {
     }
 }
 
-footer {
-    padding: 20px;
-    background: var(--footer-bg);
-    margin-top: 50px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+footer{
+    padding: 8px;
+    background: #0D0E0E;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
-     nav {
+    nav{
         display: flex;
         justify-content: space-around;
-    }
-    
-    a {
-        color: var(--card-bg);
-        text-decoration: none;
-    }
-    
-    h3 {
-        font-size: 16px;
-    }
-    
-    a:hover h3 {
-        text-decoration: underline;
+        gap: 20px;
+        align-items: center;
+
+        a{
+            color: #fff;
+            text-decoration: none;
+
+            h3{
+                font-size: 16px;
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
     }
 }
 
