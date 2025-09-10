@@ -31,7 +31,7 @@ body{
     overflow-y: hidden;
 }
 
-form{
+.container{
     background: var(--form-bg);
     max-width: 600px;
     margin: 50px auto;
@@ -49,6 +49,7 @@ form{
     #mensagem{
         max-height: 100px;
         max-width: 400px;
+        min-width: 300px;
     }
 
     select{
@@ -60,6 +61,7 @@ form{
         font-size: 16px;
         background-color: var(--input-bg);
     }
+
 
     .btn{
         margin-top: 3px;
