@@ -111,8 +111,13 @@ h1.conts {
     border-radius: 10px;
     width: 300px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
     
-     ul {
+    ul {
          list-style: none;
          padding: 0;
          margin: 0;
@@ -227,12 +232,15 @@ footer{
         gap: 30px;
     }
 
-    .email, .cn {
-        width: 100%;
+    .cn ul{
+        display: flex;
+        
+        flex-direction: column;
+        text-align: center;
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 777px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -240,8 +248,17 @@ footer{
     }
     
     .email, .cn {
-        width: 10px;
-        width: 80%;
+        width: 40vh;
+    }
+
+
+    .cn ul{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h2{
+            font-size: x-small;
+        }
     }
 }
 
@@ -260,9 +277,6 @@ footer{
         width: 100%;
     }
 
-    .pesquisa{
-        
-    }
 
     fotter {
         flex-direction: column;

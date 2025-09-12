@@ -113,7 +113,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 159px);
+    height: calc(100vh - 168px);
 
     .titlo{
         text-align: center;
@@ -188,7 +188,6 @@ main{
         background-color: var(--card-bg);
         box-shadow: var(--card-shadow);
         width: 80%;
-        text-align: center;
         border-radius: 8px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin-bottom: 40px;
@@ -306,7 +305,7 @@ footer{
     }
 
     main {
-        height: calc(100vh - 212px);
+        height: calc(100vh - 223px);
     }
 
     .cursos {
@@ -332,7 +331,7 @@ footer{
 /* caso a tela tenha 395px de largura */
 @media (max-width: 395px) {
     main{
-        height: calc(100vh - 207px);
+        height: calc(100vh - 218px);
     }
 
     footer nav a h3{
@@ -375,7 +374,7 @@ footer{
 }
 
 /* caso a tela tenha 630px de altura */
-@media (max-height: 630px) {
+@media (max-height: 630px) and (max-width: 289px) {
     header,footer{
         margin: 2px;
         padding: 5px;
