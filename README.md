@@ -1,3 +1,5 @@
+TESTAR O SITE: https://pinkmath.github.io/grupo04/
+
 <div align='center'>
     
 # LEIA
@@ -12,7 +14,6 @@ QUANDO VOCÊS TERMINAREM A PARTE DE VOCÊS ME MANDEM E EU VOU ATUALIZAR OQUE EST
 🔹 HTML USA: `<!-- MSG -->`  
 🔹 CSS USA: `/* MSG */`
 
-TESTAR O SITE: https://pinkmath.github.io/grupo04/
 </div>
 <div align='center'>
 ===================================
