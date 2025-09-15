@@ -4,7 +4,7 @@
   --primary-color: #032539;
   --secondary-color: #064663;
   --text-color: white;
-  --hover-color: yellow;
+  --hover-color: rgb(0, 60, 255);
   --breadcrumb-bg: #032539;
   --breadcrumb-divider: white;
   --img-border: black;
@@ -89,20 +89,17 @@ footer{
   text-align: center;
   padding: 10px;
   opacity: 0.8;
-  
 }
 
 body{
-  background-image: url('../../../imgs/home-page/Logo.png');
+  background-image: url('../../../imgs/pymages/163307-python_programming_language-python-programming_language-language-dynamic_programming_language-3840x2160.png');
   background-size: cover;
   background-position: center;
-
 }
 
 hr{
   border: 1px solid var(--img-border);
 }
-
 
 
 footer{
@@ -115,26 +112,34 @@ footer{
   opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .mainpage {
   width: 100%;
   padding: 10px;
   font-size: 80%;
   }
 
+  .cursos img {
+  width: 90%;
+  height: auto;
+  }
   header {
     padding: 10px;
     font-size: 90%;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
   .mainpage {
   width: 90%;
   padding: 15px;
   font-size: 80%;
   }
 
+  .cursos img {
+  width: 45%;
+  height: auto;
+  }
 
   header {
     padding: 12px;
