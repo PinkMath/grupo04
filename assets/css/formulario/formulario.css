@@ -41,6 +41,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: auto;
 
     h1{
         color: var(--primary-color);
