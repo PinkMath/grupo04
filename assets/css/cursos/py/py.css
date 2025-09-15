@@ -122,19 +122,26 @@ main{
     }
 }
 
+/* Cursos */
 .cursos{
     display: flex;
     align-items: center;
-    gap: 20px;
-
-    img{
-        max-width: 100%;
-        height: auto;
-        border: 2px solid var(--img-border);
-        border-radius: 5px;
-    }
+    gap: 20px
 }
 
+.cursos img{
+    height:200px;
+    width: auto;
+    max-width: 100%;
+    border: 2px solid var(--img-border);
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.cursos img:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 
 @media (max-width: 600px){
     .cursos img{
