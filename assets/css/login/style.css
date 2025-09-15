@@ -6,6 +6,7 @@
   --cor-fundo: #050149;
   --cor-branco: #fff;
   --cor-preto: #000;
+  --body: linear-gradient(#17cae2, #050149);
 }
 
 * {
@@ -87,16 +88,17 @@ body {
 /* Responsividade */
 @media screen and (max-width: 767px) {
   .login {
-    width: 90%;
+    width: 90%; /* ocupa quase toda a tela */
+    height: auto;
     padding: 15px;
   }
 
   .login h2 {
-    font-size: 1.5em;
+    font-size: 1.5em; /* menor título */
   }
 
   .login .inputBx input {
-    padding: 14px;
+    padding: 14px; /* aumenta área de toque */
     font-size: 1em;
   }
 
@@ -107,14 +109,7 @@ body {
   }
 
   body {
-    background: linear-gradient(var(--cor-primaria), var(--cor-fundo));
-    background-size: cover;
-    height: 1000px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    background-color: var(--cor-preto);
+  background: var(--body);
+  background-size: cover;
   }
 }

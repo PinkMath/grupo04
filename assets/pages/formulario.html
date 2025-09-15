@@ -9,7 +9,7 @@
 <body>
 
     <!-- Formulário -->
-    <form action="procesar_formulario.php" method="POST">
+    <div class="container">
         <h1>FORMULARIO</h1>
         <label for="nombre">Nome:</label>
         <input type="text" id="nombre" name="nombre" required><br><br>
@@ -29,14 +29,14 @@
         </select><br><br>
 
         <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="20" required></textarea><br><br>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="10" required></textarea><br><br>
 
         <!-- Botão de Enviar -->
-        <input class="btn" type="submit" value="Enviar">
-    </form>
+            <button class="btn">Enviar</button>
+    </div>
+    
 
-
-
+    <!-- nao foi usado form no lugar do .container porque com o form o site acaba nao funcionando corretamente -->
 
 </body>
 </html>

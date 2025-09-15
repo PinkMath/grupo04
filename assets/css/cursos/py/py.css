@@ -1,170 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-
 :root{
-  --primary-color: #032539;
-  --secondary-color: #064663;
-  --text-color: white;
-  --hover-color: yellow;
-  --breadcrumb-bg: #032539;
-  --breadcrumb-divider: white;
-  --img-border: black;
-  --main-bg: whitesmoke;
+    --primary-color: #032539;
+    --secondary-color: #064663;
+    --text-color: white;
+    --hover-color: blue;
+    --breadcrumb-bg: #032539;
+    --breadcrumb-divider: white;
+    --img-border: black;
+    --main-bg: whitesmoke;
+    --main-text: black;
+    --hr-border: black;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+/* tirando 100% das margins e paddings do site */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* todo o corpo do site */
+body{
+    background: linear-gradient(var(--secondary-color), var(--primary-color));
+    font-family: "Orbitron", sans-serif;
+    color: var(--main-text);
+    line-height: 1.6;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    color: white;
+    background-image: url(../../../imgs/cursos/pymages/python.png);
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* a parte de cima */
+header{
     background-color: var(--primary-color);
     color: var(--text-color);
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
-    z-index: 1000;
-    font-family: "Orbitron", sans-serif;
-    opacity: 0.8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul.breadcrumb {
-  padding: 8px 16px;
-  list-style: none;
-  background-color: var(--breadcrumb-bg);
-  text-align: center;
-  opacity: 0.8;
-  transition: 0.8s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* a nav */
+nav{
+    background-color: var(--breadcrumb-bg);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 10px auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    li{
+        list-style: none;
+        display: inline;
+
+        a{
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 5px;
+            transition: color 0.3s ease;
+
+            &:hover{
+                color: var(--hover-color);
+            }
+        }
+    }
+
 }
 
-ul.breadcrumb li {display: inline;}
 
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: var(--breadcrumb-divider);
-  content: "/\00a0";
-}
-
-ul.breadcrumb {
-  margin-top: 90px;
-}
-
-ul.breadcrumb a:hover {
-  transition: 0.3s;
-  color: var(--hover-color);
-}
-
-ul.breadcrumb a {
-  color: var(--text-color);
-}
-
-body, main{
-  font-family: "Orbitron", sans-serif;
+/* estilizando o main */
+main{
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: justify;
+    box-sizing: border-box;
+    height: calc(100vh - 160px);
+    overflow: auto;
 }
 
 .mainpage{
-  width:800px;
-  padding: 20px;
-  margin: 4% auto;
-  background-color: var(--main-bg);
-  opacity: 0.9;
-  color: black;
-  font-family: "Orbitron", sans-serif;
-  text-align:center;
-  line-height: 1.6;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .content{
+        width: 100%;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.6;
+        color: var(--main-text);
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--hr-border);
+        padding-bottom: 10px;
+        box-sizing: border-box;
+
+        h2{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-bottom: 10px;
+        }
+
+        
+    }
 }
 
-p, h1{
-  font-family: "Orbitron", sans-serif;
+.cursos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border: 2px solid var(--img-border);
+        border-radius: 5px;
+    }
 }
 
-h1{
-  font-size: large;
-}
 
-footer{
-  font-family: "Orbitron", sans-serif;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  text-align: center;
-  padding: 10px;
-  opacity: 0.8;
-}
-
-body{
-  background-image: url('../../../imgs/pymages/163307-python_programming_language-python-programming_language-language-dynamic_programming_language-3840x2160.png');
-  background-size: cover;
-  background-position: center;
-}
-
-hr{
-  border: 1px solid var(--img-border);
-}
-
-.cursos {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.cursos img {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  border: 2px solid var(--img-border);
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.cursos img:hover {
-  transform: scale(1.05);
-}
-
-.cursos img::after{
-  opacity: 0.9;
-}
-
-footer{
-  font-family: "Orbitron", sans-serif;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  text-align: center;
-  padding: 10px;
-  opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-  .mainpage {
-  width: 100%;
-  padding: 10px;
-  font-size: 80%;
-  }
-
-  .cursos img {
-  width: 90%;
-  height: auto;
-  }
-  header {
-    padding: 10px;
-    font-size: 90%;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-  .mainpage {
-  width: 90%;
-  padding: 15px;
-  font-size: 80%;
-  }
-
-  .cursos img {
-  width: 45%;
-  height: auto;
-  }
-
-  header {
-    padding: 12px;
-    font-size: 95%;
-  }
+@media (max-width: 600px){
+    .cursos img{
+      flex-direction: column;
+    }
+  
 }

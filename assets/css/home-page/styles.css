@@ -6,7 +6,7 @@
     --background-color: #EEEEEE;
     --text-color: #333;
     --border-radius: 5px;
-    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.6);
     --header-bg: #0D0E0E;
     --card-bg: #d8d8d8;
     --card-hover-bg: #bfbfbf;
@@ -113,7 +113,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: calc(100vh - 159px);
+    height: calc(100vh - 168px);
 
     .titlo{
         text-align: center;
@@ -182,18 +182,18 @@ main{
         box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     }
 
-    .cards .explicação {
+    .explicação {
         border-width: 1px;
         padding: 15px;
         background-color: var(--card-bg);
         box-shadow: var(--card-shadow);
         width: 80%;
-        text-align: center;
+        border-radius: 8px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         margin-bottom: 40px;
     }
 
-    .cards .explicação p {
+    .explicação p {
         font-size: 17px;
         color: var(--text-color);
         text-align: justify;
@@ -305,7 +305,7 @@ footer{
     }
 
     main {
-        height: calc(100vh - 212px);
+        height: calc(100vh - 223px);
     }
 
     .cursos {
@@ -331,7 +331,7 @@ footer{
 /* caso a tela tenha 395px de largura */
 @media (max-width: 395px) {
     main{
-        height: calc(100vh - 207px);
+        height: calc(100vh - 218px);
     }
 
     footer nav a h3{
@@ -374,7 +374,7 @@ footer{
 }
 
 /* caso a tela tenha 630px de altura */
-@media (max-height: 630px) {
+@media (max-height: 630px) and (max-width: 289px) {
     header,footer{
         margin: 2px;
         padding: 5px;

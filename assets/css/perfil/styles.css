@@ -8,6 +8,8 @@
     --cor-quaternaria: #3a415b;
     --cor-fundo: #d8d8d8 ;
     --cor-texto: #FFFFFF;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    --footer-bg: #0D0E0E;
 }
 
 
@@ -20,6 +22,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 6px;
 
 
     .bemvindo{
@@ -182,10 +185,10 @@ ul {
 
 footer{
     padding: 8px;
-    background: #0D0E0E;
+    background: var(--footer-bg);
     margin: 5px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
 
     nav{
         display: flex;
@@ -211,79 +214,49 @@ footer{
 
 /*              */
 @media (max-width: 1521px) {
-  body{
-    width: 100vw;
-  }
-
   header {
-    border-radius: 8px;
-    width: 100%;
-  }
-  header .pesquisa {
-    width: 100%;
-    gap: 10px;
-    align-items: center;
-    margin-left: 70%;  
-  }
-  header .pesquisa input {
-    width: 100px;
-  }
-  header .bemvindo {
-    position: static;
-  }
-  .Perfil {
-    flex-direction: column;
-    align-items: center;
-  }
-  .Perfil .banner {
-    width: 50%;
-    height: auto;
-  }
-  .usuario {
-    text-align: center;
-  }
-  .usuario .pf {
-    width: 90px;
-  }
-  .projetos {
-    gap: 20px;
-    align-items: center;
-  }
-  .proj1,
-  .proj2,
-  .proj3 {
-    width: 200px;
-    height: 250px;
-  }
-  .proj1 h3,
-  .proj2 h3,
-  .proj3 h3 {
-    font-size: 18px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-  }
-  .proj1 img,
-  .proj2 img,
-  .proj3 img {
-    width: 150px;
-    margin: 20px auto;
-    display: block;
-  }
-  ul {
-    align-items: center;
-    padding: 0;
-    margin: 10px 0;
-  }
-  ul li {
-    margin: 5px 0;
-  }
-  .usuario h1 {
-    font-size: 22px;
-  }
-  .usuario p {
-    font-size: 14px;
-  }
+        flex-direction: column;
+        align-items: flex-start;
+
+        .bemvindo{
+            display: none;
+        }
+    }
+
+    .pesquisa, .logo {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+
+    main {
+        height: calc(100vh - 212px);
+    }
+
+    .cursos {
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+
+        hr{
+            display: none;
+        }
+
+        ul{
+            border: 2px solid #000000;
+            padding: 20px;
+            margin: 8px;
+            border-radius: 4px;
+            width: 23pc;
+            height: 17pc;
+        }
+    }
 
   
 }
