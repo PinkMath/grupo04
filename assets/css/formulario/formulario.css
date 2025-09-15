@@ -72,9 +72,18 @@ body{
         font-size: 16px;
         background-color: var(--btn-bg);
         transition: 0.3s ease;
+        text-align: center;
 
         &:hover{
             background-color: var(--btn-hover-bg);
+        }
+
+        button{
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
         }
     }
 }
