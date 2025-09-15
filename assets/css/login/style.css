@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
+
+/* login */
+
 :root{
   --cor-primaria: #17cae2;
   --cor-secundaria: #291bf0;
-  --cor-fundo: #050149;
+  --cor-fundo: #050149;                           /* montando as variaveis para padronização */
   --cor-branco: #fff;
   --cor-preto: #000;
   --body: linear-gradient(#17cae2, #050149);
@@ -17,11 +20,11 @@
 }
 
 body {
-  display: flex;
+  display: flex;    
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-image: url("../../imgs/login/fundoLogin.png");
+  min-height: 100vh;          
+  background-image: url("../../imgs/login/fundoLogin.png");   /* flexbox para começar o alinhamento e a distribuição de itens */
   background-size: cover;
   background-position: center;
   width: 100%;

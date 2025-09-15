@@ -2,15 +2,11 @@
 
 :root{
   --btn: linear-gradient(45deg, #17cae2, #291bf0);
-  --white: #fff;
+  --white: #fff;                                      /* montando as variaveis para padronização */
   --login-placeholder: rgba(255, 255, 255, 0.75);
   --body: linear-gradient(#17cae2, #050149);
 
 }
-
-
-
-
 
 /*cadastro */
 
