@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
-
 :root{
     --cor-primaria: #0D0E0E;
     --cor-secundaria: #29304B;
     --cor-terciaria: #45528a;
     --cor-quaternaria: #3a415b;
-    --cor-fundo: #d8d8d8 ;
+    --cor-fundo: #d8d8d8;
     --cor-texto: #FFFFFF;
     --box-shadow: 0 2px 4px rgba(0,0,0,0.6);
     --footer-bg: #0D0E0E;
 }
 
+body {
+    font-family: "Orbitron", sans-serif;
+}
 
+/* HEADER */
 header{
     background-color: #0D0E0E;
     padding: 8px;
@@ -23,139 +26,119 @@ header{
     align-items: center;
     justify-content: space-between;
     border-radius: 6px;
-
-
-    .bemvindo{
-        position: relative;
-        left: 100px;
-    }
-
-
-    .pesquisa{
-        text-align: center;
-        gap: 10px;
-        
-        
-        input{
-            padding: 7px;
-            border: none;
-            border-radius: 5px;
-            
-            &:focus{
-                outline: none;
-                box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-                border: 1px solid rgba(81, 203, 238, 1);
-            }
-        }
-        button{
-            vertical-align: middle;
-            padding: 7px;
-            border: none;
-            border-radius: 5px;
-            background: #45528a;
-            cursor: pointer;
-    
-    
-            img{
-                width: 18px;
-                height: 18px;
-            }
-        }
-    }
-
-    .logo{
-
-        img{
-            width: 50px;
-            border-radius: 50%;
-            height: 50px;
-            vertical-align: middle;
-        }
-    }
-
 }
 
+header .bemvindo{
+    position: relative;
+    left: 100px;
+}
 
+header .pesquisa{
+    text-align: center;
+    gap: 10px;
+    display: flex;
+}
 
+header .pesquisa input{
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+}
+
+header .pesquisa input:focus{
+    outline: none;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+header .pesquisa button{
+    vertical-align: middle;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    background: #45528a;
+    cursor: pointer;
+}
+
+header .pesquisa button img{
+    width: 18px;
+    height: 18px;
+}
+
+header .logo img{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* PERFIL */
 .Perfil{
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .banner{
-        height: 400px;
-        justify-content: center;
-        display: flex;
-        border-radius: 9px;
-    }
-
 }
 
-body{
-    font-family: "Orbitron", sans-serif;
+.Perfil .banner{
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    border-radius: 9px;
 }
 
+/* USUARIO */
 .usuario{
     width: 820px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
-        .comp{
-            
-
-        }
-
-        h1{
-            margin-left: 10px;
-
-        }
-
-        p{
-            display: flex;
-            gap: 20px;            
-        }
-
 }
 
+.usuario h1{
+    margin-left: 10px;
+}
+
+.usuario p{
+    display: flex;
+    gap: 20px;
+}
+
+/* FOTO PERFIL */
 .pf{
     border-radius: 100px;
     border-width: 5px;
     border-style: solid;
     border-color:#29304B;
     width: 100px;
-
-    
-
 }
 
-
+/* LISTA */
 ul {
     display: flex;
     justify-content: center;
-  list-style: none;   
-  margin: 0;
-  padding: 0;
-  display: flex;      
-  gap: 20px;          
-  
-   li {
-      padding: 10px;
-      background: #eee;
-      border-radius: 5px;
-    }
+    list-style: none;   
+    margin: 0;
+    padding: 0;   
+    gap: 20px;          
 }
 
+ul li {
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+/* PROJETOS */
 .projetos{
     margin: 30px;
     display: flex;
     justify-content: center;
-    gap: 10px;
-    align-items: center;
     gap: 80px;
-    img{
-        width: 350px;
-    }
+    align-items: center;
+}
+
+.projetos img{
+    width: 350px;
 }
 
 .proj1,
@@ -164,101 +147,101 @@ ul {
     box-shadow: 5px 5px 10px gray;
     border-radius: 8px;
     border-width: 1px;
-    background-color: #d8d8d8 ;
+    background-color: #d8d8d8;
     border-style: solid;
     width: 450px;
     height: 400px;
-
-    h3{
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-    }
-
-    img{
-        display: flex;
-        margin: 50px;
-    }
 }
 
+.proj1 h3,
+.proj2 h3,
+.proj3 h3{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
 
+.proj1 img,
+.proj2 img,
+.proj3 img{
+    display: flex;
+    margin: 50px;
+}
 
+/* FOOTER */
 footer{
     padding: 8px;
     background: var(--footer-bg);
     margin: 5px;
     border-radius: 6px;
     box-shadow: var(--box-shadow);
-
-    nav{
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        align-items: center;
-
-        a{
-            color: #fff;
-            text-decoration: none;
-
-            h3{
-                font-size: 16px;
-            }
-
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-    }
 }
 
+footer nav{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
 
-/*              */
+footer nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer nav a h3{
+    font-size: 16px;
+}
+
+footer nav a:hover{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 1521px) {
   header {
         flex-direction: column;
         align-items: flex-start;
+  }
 
-        .bemvindo{
-            display: none;
-        }
-    }
+  header .bemvindo{
+        display: none;
+  }
 
-    .pesquisa, .logo {
+  .pesquisa, .logo {
         margin-top: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
-    }
+  }
 
-    .logo img{
+  .logo img{
         width: 50px;
         height: 50px;
-    }
+  }
 
-    main {
+  main {
         height: calc(100vh - 212px);
-    }
+  }
 
-    .cursos {
+  .cursos {
         flex-direction: column;
         align-items: center;
         gap: 13px;
+  }
 
-        hr{
-            display: none;
-        }
+  .cursos hr{
+        display: none;
+  }
 
-        ul{
-            border: 2px solid #000000;
-            padding: 20px;
-            margin: 8px;
-            border-radius: 4px;
-            width: 23pc;
-            height: 17pc;
-        }
-    }
-
-  
+  .cursos ul{
+        border: 2px solid #000000;
+        padding: 20px;
+        margin: 8px;
+        border-radius: 4px;
+        width: 23pc;
+        height: 17pc;
+  }
 }
 
 @media (max-width: 1340px) {
@@ -266,13 +249,12 @@ footer{
     align-items: center;
     width: 100vw;
   }
-    header {
+  header {
     border-radius: 8px;
     width: 100vw;
   }
   header .pesquisa {
     width: 100%;
-
     display: flex;
     margin-left: 60%;
   }
@@ -282,13 +264,10 @@ footer{
   header .bemvindo {
     position: static;
   }
-  
   header button{
     left: 180px;
     bottom: 45px;
   }
-
-
   footer{
     width: 100vw;
     border-radius: 10px;
@@ -297,11 +276,9 @@ footer{
     display: flex;
     align-items: center;
   }
-
 }
 
 @media (max-width: 900px) { 
-
   body{
     align-items: center;
     width: 100vw;
@@ -319,7 +296,6 @@ footer{
   .usuario p {
     font-size: 14px;
   }
-  
   header {
     width: 100vw;
     border-radius: 10px;
@@ -328,7 +304,6 @@ footer{
     display: flex;
     align-items: center;
   }
-  
   header .pesquisa {
     width: 40%;
     display: flex;
@@ -336,23 +311,15 @@ footer{
     align-items: center;
     margin-left: 0;
   }
-  
   header .pesquisa input {
     width: 100%;
     max-width: 300px;
   }
-  
   header .bemvindo {
     position: static;
     display: none;
   }
-  
-  .projetos {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-
-  }
+  /* Removed duplicate .projetos selector to prevent conflicts with media queries */
 }
 
 .projetos {
