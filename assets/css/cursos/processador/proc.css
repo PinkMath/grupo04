@@ -3,104 +3,101 @@
 :root{
     --primary-color: #032539;
     --secondary-color: #064663;
-    --text-color: white;
-    --hover-color: blue;
+    --text-color: #ffffff;
+    --hover-color: #1e90ff;
     --breadcrumb-bg: #032539;
-    --breadcrumb-divider: white;
-    --img-border: black;
-    --main-bg: whitesmoke;
-    --main-text: black;
-    --hr-border: black;
+    --breadcrumb-divider: #ffffff;
+    --img-border: #032539;
+    --main-bg: #f5f5f5;
+    --main-text: #032539;
+    --hr-border: #064663;
+    --ul-bg: #0c709e;
 }
 
 /* tirando 100% das margins e paddings do site */
 *{
-    margin: 0;
-    padding: 0;
+        margin: 0;
+        padding: 0;
 }
 
-/* todo o corpo do site */
-body{
-    background: linear-gradient(var(--secondary-color), var(--primary-color));
-    font-family: "Orbitron", sans-serif;
-    color: var(--main-text);
-    line-height: 1.6;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    color: white;
+body {
+        font-family: "Orbitron", sans-serif;
+        color: var(--text-color);
+        background-color: var(--primary-color);
+        overflow: hidden;
+        height: 100%;
 }
 
-/* a parte de cima do site */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 15px;
-    text-align: center;
-    z-index: 1000;
-    font-family: "Orbitron", sans-serif;
-    opacity: 0.8;
+/* Header */
+header{
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 10px 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul.breadcrumb {
-  padding: 8px 16px;
-  list-style: none;
-  background-color: var(--breadcrumb-bg);
-  text-align: center;
-  opacity: 0.8;
-  transition: 0.8s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Nav */
+nav{
+        background-color: var(--ul-bg);
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        margin: 10px auto;
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul.breadcrumb li {display: inline;}
-
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: var(--breadcrumb-divider);
-  content: "/\00a0";
+nav li{
+        list-style: none;
+        display: inline;
+        text-decoration: none;
 }
 
-ul.breadcrumb {
-  margin-top: 90px;
+nav li a{
+        color: var(--text-color);
+        text-decoration: none;
+        margin: 0 5px;
+        transition: color 0.3s ease;
 }
 
-ul.breadcrumb a:hover {
-  transition: 0.3s;
-  color: var(--hover-color);
+nav li a:hover{
+        color: var(--hover-color);
 }
 
-ul.breadcrumb a {
-  color: var(--text-color);
+main{
+        background-color: var(--main-bg);
+        color: var(--main-text);
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        text-align: justify;
+        box-sizing: border-box;
+        height: calc(100vh - 160px);
+        overflow: hidden;
 }
 
- main {
-    text-align: center;
- }
-
-.TT {
-    align-items: center;
-    text-align: center;
-    background-color: var(--secondary-color);
-    padding: 40px;
-    margin: 25px auto; /* centraliza horizontalmente */
-    color: var(--text-color);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position:center;
-    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.863); 
-    opacity: 1.0;
-    width: 70%;
+/* section */
+section{
+        background-color: var(--main-bg);
+        color: var(--main-text);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(24, 5, 5, 0.1);
+        max-width: 800px;
+        box-sizing: border-box;
+        height: calc(100vh - 160px);
+        overflow: auto;
+        text-align: justify;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+        /* Removido background-color: #282ed1; */
+        /* Removido box-shadow: 0 10px 10px rgba(0, 0, 0, 0.777); */
+        gap: 20px;
+        box-sizing: border-box;
 }
-
-.alin {
-    text-align: justify;
-    padding: 19px;
-    line-height: 2.0;
-    text-shadow: #333;
-}
-
